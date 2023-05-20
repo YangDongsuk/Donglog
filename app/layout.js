@@ -1,4 +1,6 @@
 import "./globals.css";
+import { Providers } from "./providers";
+
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import LoginBtn from "./LoginBtn";
@@ -26,23 +28,25 @@ export default async function RootLayout({ children }) {
       <body
         className={res != undefined && res.value == "dark" ? "dark-mode" : ""}
       >
-        <div className="navbar">
-          <Link href="/" className="logo">
-            DS FORUM
-          </Link>
-          <Link href="/list">List</Link>
-          <Link href="/write">write</Link>
-          {session ? (
-            <>
-              <LogoutBtn />
-              {"환영합니다" + session.user.name}
-            </>
-          ) : (
-            <LoginBtn />
-          )}
-          <DarkMode res={res} />
-        </div>
-        {children}
+        <Providers>
+          <div className="navbar">
+            <Link href="/" className="logo">
+              DS FORUM
+            </Link>
+            <Link href="/list">List</Link>
+            <Link href="/write">write</Link>
+            {session ? (
+              <>
+                <LogoutBtn />
+                {"환영합니다" + session.user.name}
+              </>
+            ) : (
+              <LoginBtn />
+            )}
+            <DarkMode res={res} />
+          </div>
+          {children}
+        </Providers>
       </body>
     </html>
   );
