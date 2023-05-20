@@ -31,7 +31,7 @@ export default async function RootLayout({ children }) {
         <Providers>
           <div className="navbar">
             <Link href="/" className="logo">
-              DS FORUM
+              GoBongBablog{" "}
             </Link>
             <Link href="/list">List</Link>
             <Link href="/write">write</Link>

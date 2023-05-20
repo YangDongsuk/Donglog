@@ -1,12 +1,10 @@
 "use client";
 import {
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Stack,
   Heading,
-  Button,
   Image,
   Text,
   Flex,
