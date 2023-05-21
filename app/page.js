@@ -13,7 +13,15 @@ import {
 import TechStack from "./TechStack";
 
 export default function Home() {
-  const technologies = ["Next.js", "Chakra UI", "MongoDB", "GraphQL"];
+  const technologies = [
+    "Next.js",
+    "Chakra UI",
+    "MongoDB",
+    "Node.js",
+    "React",
+    "Aws S3",
+    "Vercel",
+  ];
   // const icons = [
   //   "/techstack/nextjs-icon.jpeg",
   //   "/techstack/chakraui-icon.png",
@@ -21,10 +29,13 @@ export default function Home() {
   //   "/techstack/graphql-icon.png",
   // ];
   const icons = [
-    "/techstack/nextjs-icon.jpeg",
+    "/techstack/nextjs.png",
     "/techstack/chakraui-icon.jpg",
-    "/techstack/nmongodb-icon.png",
-    "/techstack/nextjs-icon.jpeg",
+    "/techstack/mongo.jpg",
+    "/techstack/nodejs.png",
+    "/techstack/react.png",
+    "/techstack/s3.webp",
+    "/techstack/vercel.webp",
   ];
 
   return (

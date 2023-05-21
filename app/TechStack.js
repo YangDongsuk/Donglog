@@ -32,45 +32,30 @@ const TechStack = ({ technologies, icons }) => {
         </Flex>
       </CardHeader>
       <CardBody>
-        <Flex align="center">
-          <Flex flexDir="row" mr={4}>
-            {technologies.map((tech, index) => (
-              <Box key={index} display="flex" alignItems="center" mb={2}>
-                <Flex flexDir="column" mr={4}>
-                  <Box
-                    key={index}
-                    display="flex"
-                    alignItems="center"
-                    mb={2}
-                    borderRadius="50%"
-                    overflow="hidden"
-                    boxShadow="md"
-                    width="100"
-                    height="100"
-                  >
-                    <Image src={icons[index]} alt={tech} boxSize="full" />
-                  </Box>{" "}
-                  <Box
-                    key={index}
-                    display="inline-flex"
-                    alignItems="center"
-                    bg="gray.200"
-                    color="gray.700"
-                    px={2}
-                    py={1}
-                    rounded="md"
-                    fontSize="sm"
-                    mr={2}
-                    mb={2}
-                    width={100}
-                  >
-                    <Icon as={FaCode} mr={1} />
-                    {tech}
-                  </Box>
-                </Flex>
+        <Flex align="center" flexWrap="wrap" justify="center">
+          {technologies.map((tech, index) => (
+            <Box key={index} display="flex" alignItems="center" mb={2}>
+              <Box
+                display="flex"
+                alignItems="center"
+                mb={2}
+                borderRadius="50%"
+                overflow="hidden"
+                boxShadow="md"
+                width={100}
+                height={100}
+                position="relative" // 상대적 위치 설정
+                mr={4}
+              >
+                <Image
+                  src={icons[index]}
+                  alt={tech}
+                  boxSize="100%"
+                  objectFit="cover"
+                />
               </Box>
-            ))}
-          </Flex>
+            </Box>
+          ))}
         </Flex>
       </CardBody>
 
