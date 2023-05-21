@@ -17,11 +17,16 @@
     "aws-sdk": "^2.1380.0",
     "bcrypt": "^5.1.0",
     "framer-motion": "^10.12.12",
+    "gray-matter": "^4.0.3",
     "mongodb": "^5.5.0",
     "next": "13.4.2",
     "next-auth": "^4.21.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-markdown": "^8.0.7",
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2",
+    "remark-react": "^9.0.1"
   }
 }
