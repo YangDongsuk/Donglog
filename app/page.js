@@ -11,7 +11,6 @@ import {
   Box,
 } from "@chakra-ui/react";
 import TechStack from "./TechStack";
-import ReactMarkdown from "react-markdown";
 
 export default function Home() {
   const technologies = [
@@ -90,11 +89,6 @@ export default function Home() {
         </Stack>
       </Card>
       <TechStack technologies={technologies} icons={icons} />
-      <ReactMarkdown>
-        ` # 리엑트 기초 node_modules 폴더: 라이브러리 코드 보관함 public 폴더:
-        static 파일 모아놓은곳 scr 폴더: 코드 짜는 곳 package.json: 프로젝트
-        정보 # 리엑트 생성 폴더 생성 후에 `
-      </ReactMarkdown>
     </>
   );
 }
