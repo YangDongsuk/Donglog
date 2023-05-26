@@ -34,6 +34,7 @@ export default async function RootLayout({ children }) {
               GoBongBablog{" "}
             </Link>
             <Link href="/list">List</Link>
+            <Link href="/list2">List2</Link>
             <Link href="/write">write</Link>
             {session ? (
               <>
