@@ -1,0 +1,49 @@
+"use client";
+import { useEffect, useState } from "react";
+import { NotionRenderer } from "react-notion-x";
+// core styles shared by all of react-notion-x (required)
+import "react-notion-x/src/styles.css";
+
+// used for code syntax highlighting (optional)
+import "prismjs/themes/prism-tomorrow.css";
+
+// used for rendering equations (optional)
+import "katex/dist/katex.min.css";
+import { Code } from "react-notion-x/build/third-party/code";
+// import { Code } from "@chakra-ui/react";
+import { Collection } from "react-notion-x/build/third-party/collection";
+import { Equation } from "react-notion-x/build/third-party/equation";
+import { Modal } from "react-notion-x/build/third-party/modal";
+
+function BlogPost() {
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    const fetchPostData = async () => {
+      const res = await fetch("/api/test/test1");
+      const recordMap = await res.json();
+      setPost(recordMap);
+    };
+
+    fetchPostData();
+  }, []);
+
+  if (!post) {
+    return <div>Loading...</div>;
+  }
+  return (
+    <NotionRenderer
+      recordMap={post}
+      // fullPage={true}
+      darkMode={false}
+      components={{
+        Code,
+        Collection,
+        Equation,
+        Modal,
+      }}
+    />
+  );
+}
+
+export default BlogPost;
