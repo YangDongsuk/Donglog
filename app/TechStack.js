@@ -10,9 +10,7 @@ import {
   Avatar,
   Heading,
   Image,
-  Icon,
 } from "@chakra-ui/react";
-import { FaCode } from "react-icons/fa";
 
 const TechStack = ({ technologies, icons }) => {
   return (
@@ -20,13 +18,15 @@ const TechStack = ({ technologies, icons }) => {
       <CardHeader>
         <Flex spacing="4">
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-            <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
+            <Avatar name="Yang Dongsuk" src="me.jpg" />
 
             <Box>
               <Heading size="sm">
                 주인장이 블로그 만들기 위해 사용한 기술 스택
               </Heading>
-              <Text>Creator, Chakra UI</Text>
+              <Text textDecoration="line-through">
+                이런거 있어야 좀 간지 나잖아
+              </Text>
             </Box>
           </Flex>
         </Flex>

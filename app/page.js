@@ -21,6 +21,7 @@ export default function Home() {
     "React",
     "Aws S3",
     "Vercel",
+    "Notion",
   ];
   // const icons = [
   //   "/techstack/nextjs-icon.jpeg",
@@ -36,6 +37,7 @@ export default function Home() {
     "/techstack/react.png",
     "/techstack/s3.webp",
     "/techstack/vercel.webp",
+    "/techstack/notion.webp",
   ];
 
   return (
