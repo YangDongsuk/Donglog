@@ -27,7 +27,7 @@ async function App(props) {
         blockMap={staticResponse} // 페이지정보 넣기
         fullPage={false}
         hideHeader={true}
-        darkMode={true}
+        darkMode={false}
       />
     </div>
   );

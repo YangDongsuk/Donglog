@@ -80,7 +80,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 /* sns 아이콘 사이즈 조절 */
 .sns-icons img {
   width: 20px; /* 원하는 크기로 조절하세요 */
