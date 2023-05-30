@@ -1,5 +1,5 @@
 async function App() {
-  const TOKEN = "secret_6NkDeKcVjVMB4VfoDM5fHbZTCDRWkDLv2ja9ghAOxE3";
+  const TOKEN = process.env.NOTION_SECRET;
   const DATABASE_ID = "ec8fbd8ce1c7475da616a8876802fa6b";
   const options = {
     method: "POST",
