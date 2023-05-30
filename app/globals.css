@@ -76,15 +76,19 @@ body {
   padding: 0;
 }
 
+/* ... 기존 CSS ... */
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: transparent; /* 배경을 투명하게 변경 */
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
+
+/* ... 기존 CSS ... */
 
 /* sns 아이콘 사이즈 조절 */
 .sns-icons img {

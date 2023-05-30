@@ -43,6 +43,7 @@ function BlogPost() {
     <NotionRenderer
       recordMap={post}
       // fullPage={true}
+      darkMode={colorMode === "dark" ? true : false}
       // darkMode={false}
       components={{
         Code,
