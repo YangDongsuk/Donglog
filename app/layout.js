@@ -3,7 +3,7 @@ import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import DarkMode2 from "./DarkModebyChakra";
-import { cookies } from "next/headers";
+// import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,12 +13,12 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  let res = cookies().get("mode");
+  // let res = cookies().get("mode");
 
   return (
     <html lang="en">
       <body
-        className={res != undefined && res.value == "dark" ? "dark-mode" : ""}
+      // className={res != undefined && res.value == "dark" ? "dark-mode" : ""}
       >
         <Providers>
           <div className="navbar">

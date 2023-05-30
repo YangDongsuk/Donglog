@@ -3,7 +3,7 @@ import { Providers } from "./providers";
 
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import LoginBtn from "./LoginBtn";
+import LoginBtn from "../history/LoginBtn";
 import LogoutBtn from "./LogoutBtn";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
