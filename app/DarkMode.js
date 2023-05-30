@@ -6,10 +6,6 @@ export default function DarkMode({ res }) {
   let router = useRouter();
 
   useEffect(() => {
-    // let 쿠키값 = ("; " + document.cookie).split(`; mode=`).pop().split(";")[0];
-    // if (쿠키값 == "") {
-    //   document.cookie = "mode=light; max-age=" + 3600 * 24 * 400;
-    // }
     if (res == undefined) {
       document.cookie = "mode=light; max-age=" + 3600 * 24 * 400;
       console.log("쿠키값이 없습니다.");
