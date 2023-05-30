@@ -9,6 +9,8 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { cookies } from "next/headers";
 import DarkMode from "./DarkMode";
+// import DarkMode2 from "./DarkModebyChakra";
+// import theme from "./theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,12 +32,13 @@ export default async function RootLayout({ children }) {
       >
         <Providers>
           <div className="navbar">
+            {/* <DarkMode2 res={res} /> */}
+            <DarkMode res={res} />
+
             <Link href="/" className="logo">
               GoBongBablog{" "}
             </Link>
-            {/* <Link href="/list">List</Link> */}
             <Link href="/list2">List2</Link>
-            {/* <Link href="/write">write</Link> */}
             {session ? (
               <>
                 <LogoutBtn />
@@ -44,7 +47,6 @@ export default async function RootLayout({ children }) {
             ) : (
               <LoginBtn />
             )}
-            <DarkMode res={res} />
           </div>
           {children}
         </Providers>

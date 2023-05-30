@@ -25,8 +25,9 @@ async function App(props) {
     <div className="App">
       <NotionRenderer // 웹페이지에 노션을 렌더링
         blockMap={staticResponse} // 페이지정보 넣기
-        fullPage={true}
+        fullPage={false}
         hideHeader={true}
+        darkMode={true}
       />
     </div>
   );

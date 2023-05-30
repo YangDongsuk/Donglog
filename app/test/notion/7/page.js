@@ -1,6 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { NotionRenderer } from "react-notion-x";
+
+import { ColorModeScript, Button, useColorMode } from "@chakra-ui/react";
+
 // core styles shared by all of react-notion-x (required)
 import "react-notion-x/src/styles.css";
 
@@ -20,6 +23,8 @@ import { Modal } from "react-notion-x/build/third-party/modal";
 
 function BlogPost() {
   const [post, setPost] = useState(null);
+  const { colorMode, toggleColorMode } = useColorMode();
+  console.log("colorMode", colorMode);
 
   useEffect(() => {
     const fetchPostData = async () => {
@@ -38,7 +43,7 @@ function BlogPost() {
     <NotionRenderer
       recordMap={post}
       // fullPage={true}
-      darkMode={false}
+      // darkMode={false}
       components={{
         Code,
         Collection,
