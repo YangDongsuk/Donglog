@@ -39,9 +39,9 @@ export default function ListItem({ result }) {
   return (
     <div>
       <Card maxW="800px">
-        <CardHeader>
+        {/* <CardHeader>
           <Heading size="md">ALL</Heading>
-        </CardHeader>
+        </CardHeader> */}
 
         <CardBody>
           <Stack divider={<StackDivider />} spacing="4">

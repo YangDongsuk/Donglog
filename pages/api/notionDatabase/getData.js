@@ -27,28 +27,28 @@ export default async function handler(요청, 응답) {
       );
       const projects = await res.json();
       //   console.log(projects);
-      //   console.log(projects.results[0].properties);
+      // console.log(projects.results[0].properties);
 
-      //   const projectNames = projects.results.map(
-      //     (aProject) => aProject.properties.Name.title[0].plain_text
-      //   );
-      //   const tags = projects.results.map(
-      //     (aProject) => aProject.properties.카테고리.select.name
-      //   );
+      // const projectNames = projects.results.map(
+      //   (aProject) => aProject.properties.Name.title[0].plain_text
+      // );
+      // const tags = projects.results.map(
+      //   (aProject) => aProject.properties.카테고리.select.name
+      // );
 
-      //   const status = projects.results.map(
-      //     (aProject) => aProject.properties.Status.status.name
-      //   );
+      // const status = projects.results.map(
+      //   (aProject) => aProject.properties.Status.status.name
+      // );
 
-      //   const discription = projects.results.map(
-      //     (aProject) => aProject.properties.설명.rich_text[0].plain_text
-      //   );
-      //   const ids = projects.results.map((aProject) => aProject.id);
-      //   console.log(`projectNames : ${projectNames}`);
-      //   console.log(`tags : ${tags}`);
-      //   console.log(`status : ${status}`);
-      //   console.log(`discription : ${discription}`);
-      //   console.log(`ids : ${ids}`);
+      // const discription = projects.results.map(
+      //   (aProject) => aProject.properties.설명.rich_text[0].plain_text
+      // );
+      // const ids = projects.results.map((aProject) => aProject.id);
+      // console.log(`projectNames : ${projectNames}`);
+      // console.log(`tags : ${tags}`);
+      // console.log(`status : ${status}`);
+      // console.log(`discription : ${discription}`);
+      // console.log(`ids : ${ids}`);
 
       응답.status(200).json(projects);
     } catch (error) {
