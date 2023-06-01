@@ -1,4 +1,4 @@
-async function App() {
+async function Test1() {
   const TOKEN = process.env.NOTION_SECRET;
   const DATABASE_ID = "ec8fbd8ce1c7475da616a8876802fa6b";
   const options = {
@@ -52,4 +52,4 @@ async function App() {
   return <div>res</div>;
 }
 
-export default App;
+export default Test1;

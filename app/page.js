@@ -1,4 +1,4 @@
-import InfoCard from "./Infocard";
+import InfoCard from "./InfoCard";
 import TechStack from "./TechStack";
 
 export default function Home() {

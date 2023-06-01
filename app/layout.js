@@ -3,6 +3,9 @@ import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import DarkMode2 from "./DarkModebyChakra";
+import DarkMode3 from "./DarkModebyChakra2";
+import Title from "./Title";
+import List from "./List";
 // import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,10 +26,13 @@ export default async function RootLayout({ children }) {
         <Providers>
           <div className="navbar">
             <Link href="/" className="logo">
-              GoBongBablog
+              <Title />
             </Link>
-            <Link href="/list2">List2</Link>
-            <DarkMode2 />
+            <Link href="/list2">
+              <List />
+            </Link>
+            {/* <DarkMode2 /> */}
+            <DarkMode3 />
           </div>
           {children}
         </Providers>

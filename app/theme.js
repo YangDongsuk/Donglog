@@ -8,7 +8,7 @@ const config = {
   initialColorMode: "system", // or 'dark' or 'system'
   useSystemColorMode: true, // true if you want the app color mode to change with the system color mode
 };
-
+console.log("config", config);
 // 3. extend the theme
 const theme = extendTheme({ config });
 
