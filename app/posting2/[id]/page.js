@@ -28,7 +28,7 @@ function BlogPost(props) {
 
   useEffect(() => {
     const fetchPostData = async () => {
-      const res = await fetch(`/api/test/${props.params.id}`);
+      const res = await fetch(`/api/notionPage/${props.params.id}`);
       const recordMap = await res.json();
       setPost(recordMap);
     };

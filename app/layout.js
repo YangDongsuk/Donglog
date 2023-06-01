@@ -28,7 +28,7 @@ export default async function RootLayout({ children }) {
             <Link href="/" className="logo">
               <Title />
             </Link>
-            <Link href="/list2">
+            <Link href="/list3">
               <List />
             </Link>
             {/* <DarkMode2 /> */}

@@ -5,10 +5,13 @@ export default async function List() {
     method: "GET",
   });
   const projects = await res.json();
+  const filteredResults = projects.results.filter(
+    (project) => project.properties.Status.status.name === "Done"
+  );
 
   return (
     <div className="list-bg">
-      <ListItem result={projects.results} />
+      <ListItem result={filteredResults} />
     </div>
   );
 }
