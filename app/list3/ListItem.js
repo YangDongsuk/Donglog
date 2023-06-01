@@ -2,47 +2,21 @@
 import Link from "next/link";
 import {
   Card,
-  CardHeader,
   CardBody,
   Heading,
   Stack,
   StackDivider,
   Box,
   Text,
-  Button,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 export default function ListItem({ result }) {
-  // console.log(projects.results[0].properties);
-
-  // const projectNames = projects.results.map(
-  //   (aProject) => aProject.properties.Name.title[0].plain_text
-  // );
-  // const tags = projects.results.map(
-  //   (aProject) => aProject.properties.카테고리.select.name
-  // );
-
-  // const status = projects.results.map(
-  //   (aProject) => aProject.properties.Status.status.name
-  // );
-
-  // const discription = projects.results.map(
-  //   (aProject) => aProject.properties.설명.rich_text[0].plain_text
-  // );
-  // const ids = projects.results.map((aProject) => aProject.id);
-  // console.log(`projectNames : ${projectNames}`);
-  // console.log(`tags : ${tags}`);
-  // console.log(`status : ${status}`);
-  // console.log(`discription : ${discription}`);
-  // console.log(`ids : ${ids}`);
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
 
   return (
     <div>
-      <Card maxW="800px">
-        {/* <CardHeader>
-          <Heading size="md">ALL</Heading>
-        </CardHeader> */}
-
+      <Card w={isLargerThan800 ? "750px" : "90%"}>
         <CardBody>
           <Stack divider={<StackDivider />} spacing="4">
             {result.map((item, i) => {
