@@ -47,3 +47,8 @@
 // }
 
 // export default App;
+//page.js를 전부 다 비워두면 로컬에서는 문제가 안생기지만, 배포시에는 문제가 생기는거 같다.
+function Test6() {
+  return <div>test6</div>;
+}
+export default Test6;
