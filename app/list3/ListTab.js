@@ -12,7 +12,7 @@ export default function ListTab({ result }) {
   );
 
   return (
-    <Tabs w={isLargerThan800 ? "800px" : "100%"}>
+    <Tabs w={isLargerThan800 ? "800px" : "95vw"}>
       <TabList>
         {/* categoryNames 배열을 매핑하여 동적으로 탭 생성 */}
         {categoryNames.map((name) => (

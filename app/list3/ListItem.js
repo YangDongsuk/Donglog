@@ -16,7 +16,7 @@ export default function ListItem({ result }) {
 
   return (
     <div>
-      <Card w={isLargerThan800 ? "750px" : "90%"}>
+      <Card w={isLargerThan800 ? "768px" : "97%"}>
         <CardBody>
           <Stack divider={<StackDivider />} spacing="4">
             {result.map((item, i) => {

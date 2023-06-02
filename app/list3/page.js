@@ -9,7 +9,9 @@ export default function List() {
   useEffect(() => {
     const fetchProjects = async () => {
       const res = await fetch(
-        "https://donglog.vercel.app//api/notionDatabase/getData",
+        // "https://donglog.vercel.app//api/notionDatabase/getData",
+        "/api/notionDatabase/getData",
+
         {
           method: "GET",
         }
