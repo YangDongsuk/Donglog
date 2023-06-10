@@ -2,9 +2,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import DarkMode2 from "./DarkModebyChakra";
-import DarkMode3 from "./DarkModebyChakra2";
-import Title from "./Title";
+import Title2 from "./Title2";
 import List from "./List";
 // import { cookies } from "next/headers";
 
@@ -26,13 +24,14 @@ export default async function RootLayout({ children }) {
         <Providers>
           <div className="navbar">
             <Link href="/" className="logo">
-              <Title />
+              {/* <Title /> */}
+              <Title2 />
             </Link>
             <Link href="/list3">
               <List />
             </Link>
             {/* <DarkMode2 /> */}
-            <DarkMode3 />
+            {/* <DarkMode3 /> */}
           </div>
           {children}
         </Providers>

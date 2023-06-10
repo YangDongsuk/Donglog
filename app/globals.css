@@ -1,5 +1,7 @@
 .body {
   margin: 0;
+  max-width: 800px;
+  align-self: flex-start;
 }
 .list-bg {
   background: rgb(249, 250, 255);
@@ -50,14 +52,22 @@ a {
   text-decoration: none;
   color: black;
 }
-.logo {
-  font-weight: bold;
-}
 
 .list-item {
   opacity: 1;
   transition: all 1s;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 왼쪽 정렬을 위한 변경 */
+  background: transparent;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .dark-mode .navbar {
   background: #222;
 }
@@ -87,11 +97,19 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+.navbar a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  font-weight: bold;
+}
 
 /* ... 기존 CSS ... */
 
 /* sns 아이콘 사이즈 조절 */
 .sns-icons img {
-  width: 20px; /* 원하는 크기로 조절하세요 */
-  height: 20px; /* 원하는 크기로 조절하세요 */
+  width: 40px; /* 원하는 크기로 조절하세요 */
+  height: 40px; /* 원하는 크기로 조절하세요 */
 }
