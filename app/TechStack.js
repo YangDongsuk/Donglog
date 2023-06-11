@@ -18,7 +18,7 @@ const TechStack = ({ technologies, icons }) => {
       <CardHeader>
         <Flex spacing="4">
           <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
-            <Avatar name="Yang Dongsuk" src="/me.jpg" />
+            <Avatar name="Yang Dongsuk" src="/me.JPG" />
 
             <Box>
               <Heading size="sm">
